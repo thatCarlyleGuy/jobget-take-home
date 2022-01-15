@@ -186,7 +186,7 @@ const SearchForm = ({
                             </InputAdornment>
                           ),
                         }}
-                        label="Search City or State"
+                        label="City or state"
                         variant="outlined"
                       />
                     )}
@@ -231,8 +231,8 @@ const SearchForm = ({
             control={control}
             render={({ field }) => (
               <FormControl variant="outlined">
-                <InputLabel>Posted Time</InputLabel>
-                <Select {...field} label="Posted Time">
+                <InputLabel>Posted time</InputLabel>
+                <Select {...field} label="Posted time">
                   {postedTimeOptions.map((option) => (
                     <MenuItem value={option.value} key={option.value}>
                       {option.label}

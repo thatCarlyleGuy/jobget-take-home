@@ -63,7 +63,7 @@ const SearchResults = ({ search, location, postedTime, radiusMiles }) => {
         </Typography>
 
         <Typography variant="subtitle2" sx={{ marginBottom: 1 }}>
-          Page #{pageNumber}
+          Page #{pageNumber} of {resultsPage}
         </Typography>
       </Box>
 
@@ -96,7 +96,7 @@ const SearchResults = ({ search, location, postedTime, radiusMiles }) => {
 SearchResults.propTypes = {
   search: PropTypes.string,
   location: PropTypes.string,
-  postedTime: PropTypes.string,
+  postedTime: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   radiusMiles: PropTypes.string,
 };
 

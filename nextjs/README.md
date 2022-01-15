@@ -1,46 +1,26 @@
-# Next.js example
+#JobGet Take Home Assignment - Carlyle Ruiters
 
-## How to use
+Deployment: https://jobget-take-home.vercel.app/
 
-Download the example [or clone the repo](https://github.com/mui-org/material-ui):
+## Tech Used
+1. Component library: **Material UI**
+2. React framework: **NextJs**
+3. Unit tests: **Jest + @testing-library/react**
+4. Development: **Eslint + Prettier**
+5. Services: **Google Places Autocomplete**
 
-<!-- #default-branch-switch -->
+## Features
+### Basics
+Search for US and UK jobs by selected a Search Term and a City.
+You can also filter by Radius and Posted Time.
+Results are paginated; pages can be switched at the bottom of the list of search results.
 
-```sh
-curl https://codeload.github.com/mui-org/material-ui/tar.gz/master | tar -xz --strip=2  material-ui-master/examples/nextjs
-cd nextjs
-```
+### Url query parameters
+Form state is linked to URL query parameters.
+This makes our app sharable and persistent across page reloads.
 
-Install it and run:
+### Autocomplete
+Leverages Google's Places API to autocomplete city searches.
 
-```sh
-npm install
-npm run dev
-```
-
-or:
-
-<!-- #default-branch-switch -->
-
-[![Edit on StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/mui-org/material-ui/tree/master/examples/nextjs)
-
-[![Edit on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/mui-org/material-ui/tree/master/examples/nextjs)
-
-## The idea behind the example
-
-The project uses [Next.js](https://github.com/vercel/next.js), which is a framework for server-rendered React apps.
-It includes `@mui/material` and its peer dependencies, including `emotion`, the default style engine in MUI v5.
-If you prefer, you can [use styled-components instead](https://mui.com/guides/interoperability/#styled-components).
-
-## The link component
-
-Next.js has [a custom Link component](https://nextjs.org/docs/api-reference/next/link).
-The example folder provides adapters for usage with MUI.
-More information [in the documentation](https://mui.com/guides/routing/#next-js).
-
-## What's next?
-
-<!-- #default-branch-switch -->
-
-You now have a working example project.
-You can head back to the documentation, continuing browsing it from the [templates](https://mui.com/getting-started/templates/) section.
+### TODO:
+Mobile friendly layout by default but autoscrolls to search results would be welcomed on mobile.
