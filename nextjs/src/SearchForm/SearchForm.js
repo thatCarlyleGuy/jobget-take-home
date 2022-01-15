@@ -164,6 +164,7 @@ const SearchForm = ({
                     onInputChange={clearLocation}
                     options={suggestions.map((option) => option.description)}
                     loadingText="Loading cities..."
+                    noOptionsText="Type to start searching..."
                     loading={loading}
                     defaultValue={location}
                     fullWidth
