@@ -11,18 +11,23 @@ export default function Index() {
   const [pathQueries, setPathQueries] = useState(-1);
   const [submitValues, setSubmitValues] = useState();
   const router = useRouter();
+  const fieldRef = React.useRef(null);
 
-  const onSearch = (searchValues) => {
+  const onSearch = async (searchValues) => {
     setSubmitValues(searchValues);
 
     const { location, jobTitle, radiusMiles, postedTime } = searchValues;
-    router.push({
+    await router.push({
       query: {
         search: jobTitle,
         location,
         radius: radiusMiles,
         daysAgo: postedTime,
       },
+    });
+
+    fieldRef.current.scrollIntoView({
+      behavior: 'smooth',
     });
   };
 
@@ -65,6 +70,7 @@ export default function Index() {
             radiusMiles={submitValues.radiusMiles}
           />
         )}
+        <div className="field" ref={fieldRef} />
       </Box>
     </Container>
   );

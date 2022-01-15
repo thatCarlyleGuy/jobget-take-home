@@ -27,11 +27,12 @@ const Result = ({ title, companyName, snippet, postedDate, url, source }) => {
               <AccessTime fontSize="small" sx={{ marginRight: 0.5 }} />
               {postedDate}
             </Typography>
+
             <Typography
               variant="subtitle2"
-              sx={{ fontWeight: 'normal', display: 'flex' }}
+              sx={{ fontWeight: 'normal', textAlign: 'right' }}
             >
-              <RestartAlt fontSize="small" sx={{ marginRight: 0.5 }} />
+              {/*<RestartAlt fontSize="small" sx={{ marginRight: 0.5 }} />*/}
               {source}
             </Typography>
           </Box>
