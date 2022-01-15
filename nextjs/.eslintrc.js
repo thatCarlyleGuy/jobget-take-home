@@ -10,7 +10,11 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['jest', 'prettier', 'testing-library'],
-  extends: ['plugin:@next/next/recommended'],
+  extends: [
+    'plugin:react/recommended',
+    'plugin:prettier/recommended',
+    'plugin:@next/next/recommended',
+  ],
   overrides: [
     // Only uses Testing Library lint rules in test files
     {
