@@ -1,4 +1,4 @@
-#JobGet Take Home Assignment - Carlyle Ruiters
+# JobGet Take Home Assignment - Carlyle Ruiters
 
 Deployment: https://jobget-take-home.vercel.app/
 
