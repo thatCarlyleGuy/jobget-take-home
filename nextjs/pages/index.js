@@ -3,9 +3,9 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
 import SearchForm from '../src/SearchForm';
 import SearchResults from '../src/SearchResults';
-import Typography from '@mui/material/Typography';
 
 export default function Index() {
   const [pathQueries, setPathQueries] = useState(-1);
