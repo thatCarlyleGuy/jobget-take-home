@@ -23,4 +23,5 @@ This makes our app sharable and persistent across page reloads.
 Leverages Google's Places API to autocomplete city searches.
 
 ### TODO:
-Mobile friendly layout by default but autoscrolls to search results would be welcomed on mobile.
+- Mobile friendly layout by default but autoscrolls to search results would be welcomed on mobile.
+- Revoke and replace comitted secrets.
